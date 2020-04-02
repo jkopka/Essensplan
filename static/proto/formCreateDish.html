@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#fdbf9c">
+  <title>Calendar Framework7 Demo App</title>
+  <link rel="stylesheet" href="../semantic/semantic.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="../semantic/semantic.min.js"></script>
+
+  <script src="../semantic/components/state.js"></script>
+</head>
+<body>
+  <div class="ui stackable inverted menu">
+    <div class="ui container">
+      <a href="#" class="header item">
+        <img class="logo" src="../favicon-96x96.png">&nbsp;
+        Essensplan
+      </a>
+      <a href="index.html" class="item">Wochenplan</a>
+      <div class="ui simple dropdown item">
+        Gerichte <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="dishes.html">Alle ansehen</a>
+          <a class="item" href="formCreateDish.html">Neues erstellen</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui container">
+    <h3>Gericht erstellen</h1>
+    <form class="ui form" id="neues-gericht" action="/createDish">
+      <input type="text" name="name" placeholder="Name des Gerichts">
+      <input type="text" name="ingredients" placeholder="Zutaten"><p>&nbsp;</p>
+      <button type="submit" class="ui primary button" value="Hinzufügen">Hinzufügen</button>
+    </form>
+  </div>
+  <script type="text/javascript" src="../js/main.js"></script>
+</body>
+</html>

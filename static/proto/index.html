@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#2196f3">
+  <title>Essensplan</title>
+  <link rel="stylesheet" href="../semantic/semantic.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='apple-icon-57x57.png') }}">
+  <link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='apple-icon-60x60.png') }}">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='apple-icon-72x72.png') }}">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='apple-icon-76x76.png') }}">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='apple-icon-114x114.png') }}">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='apple-icon-120x120.png') }}">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='apple-icon-144x144.png') }}">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='apple-icon-152x152.png') }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='apple-icon-180x180.png') }}">
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ url_for('static', filename='android-icon-192x192.png') }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon-32x32.png') }}">
+  <link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='favicon-96x96.png') }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon-16x16.png') }}">
+</head>
+
+<body>
+    <div class="ui stackable inverted menu">
+        <div class="ui container">
+          <a href="#" class="header item">
+            <img class="logo" src="../favicon-96x96.png">&nbsp;
+              Essensplan
+          </a>
+          <div class="ui simple dropdown item">
+            Gerichte <i class="dropdown icon"></i>
+            <div class="menu">
+              <a class="item" href="{{ url_for('listDishes') }}">Alle ansehen</a>
+              <a class="item" href="formCreateDish.html">Neues erstellen</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ui container">
+      <div class="ui main text container">
+        <h1 class="ui header">{{year}}</h1>
+        <h2 class="ui header">{{monthName}}</h2>
+      </div>
+      {% for day in days %}
+      <div class="ui stacked segment">
+        {% if days[day].hasDish == False %}
+          <form action="{{ linkchooseDish }}?choosenDate={{days[day].date}}">
+            <h4 class="ui horizontal divider header">{{day}}. {{weekdays[day]}}</h4>
+            <h2 class="ui header">Nichts zu essen.</h2>
+            <button type="submit" class="ui basic button">Zuweisen</button>
+          </form>
+        {% else %}
+        {% for dish in days[day].dish_id %}
+          <form action="{{ url_for('removeDish') }}?choosen_date={{days[day].date}}&dish_id={{dish['dish_id']}}">
+            <h4 class="ui horizontal divider header">{{day}}. {{weekdays[day]}}</h4>
+            <h2 class="ui header">{{ dishes.getName(dish["dish_id"])[0]['name'] }}</h2>
+            <button type="submit" class="ui basic button">Löschen</button>
+          </form>
+        {% endfor %}{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    <script type="text/javascript" src="../js/main.js"></script>
+</body>
+
+</html>

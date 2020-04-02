@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#2196f3">
+  <title>Essensplan - Alle Tags</title>
+  <link rel="stylesheet" href="static/semantic/semantic.min.css">
+  <link rel="stylesheet" href="static/css/main.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='apple-icon-57x57.png') }}">
+  <link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='apple-icon-60x60.png') }}">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='apple-icon-72x72.png') }}">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='apple-icon-76x76.png') }}">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='apple-icon-114x114.png') }}">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='apple-icon-120x120.png') }}">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='apple-icon-144x144.png') }}">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='apple-icon-152x152.png') }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='apple-icon-180x180.png') }}">
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ url_for('static', filename='android-icon-192x192.png') }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon-32x32.png') }}">
+  <link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='favicon-96x96.png') }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon-16x16.png') }}">
+</head>
+
+<body>
+    <div class="ui menu top fixed sticky">
+        <a class=" item" href="{{ url_for('displayWeek') }}">
+          <img class="logo" src="static/favicon-96x96.png">&nbsp;
+            Essensplan
+        </a>
+        <a class="active item" href="{{ url_for('listDishes') }}">Gerichte</a>
+        <a class="item" href="{{ url_for('formCreateDish') }}">Gericht erstellen</a>
+    </div>    
+    <div class="ui main container">
+        <p><br />&nbsp;<br />&nbsp;<br /></p>
+        <div class="ui vertical fluid menu">
+          <!-- {% for tag in tags %} -->
+            <div class="ui item">
+                <a href="" class="item-link external">{{tag['name']}}</a>
+                    <div class="ui small teal label">
+                      15
+                    </div>
+                    <div class="ui small teal label">
+                       14.03.2018
+                    </div>
+                    <a href="{{ url_for('deleteTag', tag_id=tag['tag_id']) }}" class="ui right floated mini icon button"><i class="close icon"></i></a>
+            </div>
+          <!-- {% endfor %} -->
+      </div>
+      <form class="ui form" action="/create_tag">
+      {% if has_message %}
+        <div class="ui message">
+          <div class="header">Tag</div>
+          <p>{{ has_message }}</p>
+        </div>
+        {% endif %}
+        <div class="field">
+          <label>Tag</label>
+          <input type="text" name="tag" placeholder="Tag" autofocus>
+        </div>
+        <button class="ui button" type="submit">Hinzufügen</button>
+      </form>
+    </div>
+    <script type="text/javascript" src="static/js/main.js"></script>
+</body>
+
+</html>

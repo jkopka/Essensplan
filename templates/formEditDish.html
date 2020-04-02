@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#fdbf9c">
+    <title>Essensplan - Gericht hinzufügen</title>
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/semantic/semantic.min.css">
+    <link rel="stylesheet" href="static/semantic/components/dropdown.css">
+  </head>
+  <body>
+    <div class="ui menu top fixed sticky">
+        <a class=" item" href="{{ url_for('displayWeek') }}">
+          <img class="logo" src="static/favicon-96x96.png">&nbsp;
+            Essensplan
+        </a>
+        <a class="item" href="{{ url_for('listDishes') }}">Gerichte</a>
+        <a class="active item" href="{{ url_for('formCreateDish') }}">Gericht erstellen</a>
+    </div>
+    <div class="ui main text container" style="margin-top: 70px;">
+      <br />
+        <a href="{{ url_for('showDish',dish_id=dish['dish_id']) }}" class="ui left labeled icon button"><i class="left arrow icon"></i> Zurück </a>
+        <form class="ui form" id="editDish" action="/editDish">
+            <input type="hidden" name="dish_id" value="{{ dish['dish_id'] }}">
+        <div class="field">
+          <label>Name</label>
+          <input type="text" name="name" value="{{ dish['name'] }}">
+        </div>
+        {% if countTags > 0 %}
+        <div class="field">
+          <select name="tags" multiple id="tags" class="ui fluid search dropdown">
+            <option value="">Tags</option>
+            <!-- {% for tag in allTags %} -->
+            <option value="{{ tag["name"] }}"{{ tag['selected'] }}>{{ tag["name"] }}</option>
+            <!-- {% endfor %} -->
+          </select>
+        </div>
+        {% endif %}
+        <div class="field">
+          <button type="submit" class="ui button" value="Bearbeiten">Bearbeiten</button>
+        </div>
+        {% if ingredientsCount > 0 %}
+        <table class="ui celled unstackable table">
+            <thead>
+              <tr>
+                <th>Zutat</th>
+                <th>Menge</th>
+                <th>Löschen</th>
+              </tr>
+            </thead>
+            <tbody>
+            <!-- {% for ingredient in ingredients %} -->
+            <tr>
+              <td>
+                <div class="sub header">
+                    {{ ingredient["name"] }}
+                </div>
+              </td>
+              <td>
+                  {{ ingredient["amount"] }} {{ ingredient["unit"] }}
+              </td>
+              <td>
+                  <a href="{{ url_for('deleteIngredient', dish_id=dish['dish_id'], name=ingredient["name"]) }}" class="ui right floated mini icon button"><i class="close icon"></i></a>
+              </td>
+            </tr>
+            <!-- {% endfor %} -->
+          </tbody>
+        </table>
+        {% endif %}
+        </form>
+        <form class="ui form" action="/createIngredient">
+          <input type="hidden" name="dish_id" value="{{ dish['dish_id'] }}">
+          <div class="field">
+            <label>Menge</label>
+            <div class="fields">
+              <input class="six wide field" type="text" name="amount" placeholder="Menge" autofocus>
+              <input class="four wide field" type="text" name="unit" placeholder="Einheit">
+              <input class="six wide field" type="text" name="name" placeholder="Zutat">
+            </div>
+          </div>
+          <button class="ui button" type="submit">Hinzufügen</button>
+        </form>
+        <br />
+      </div>
+    </div>
+    <script type="text/javascript" src="static/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="static/semantic/semantic.js"></script>
+    <script type="text/javascript" src="static/js/main.js"></script>
+</body>
+</html>
