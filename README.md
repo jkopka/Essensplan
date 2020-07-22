@@ -10,8 +10,10 @@ Ziel ist es, für jede Woche einen Essensplan aufzustellen. Bis zur Abschaltung 
 3. Zugriff über http://127.0.0.0:5000
 
 # Benutzung
-
-
+1. Registrierung
+2. Einloggen
+3. Gericht(e) anlegen
+4. Gericht einem Wochentag zuordnen
 
 # Abhängigkeiten
 - flask
