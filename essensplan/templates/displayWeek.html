@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block content %}
+      <div class="container" style="margin-bottom: 10px;">
+        <a href="{{ url_for('displayWeek') }}?date={{ lastWeek }}" class="btn btn-outline-primary"><span class="oi oi-arrow-left"></span></a>
+        <a href="{{ url_for('displayWeek') }}" class="btn btn-outline-primary">Heute</a>
+        <a href="{{ url_for('displayWeek') }}?date={{ nextWeek }}" class="btn btn-outline-primary"><span class="oi oi-arrow-right"></span></a>
+      </div>
+      <div class="container">
+        <h2 class="">{{ date_title }}</h2>  
+      </div>
+      <div class="container">
+        <h5 class="">{{ monthNames[month] }}</h5>
+      </div>
+    </div>
+    <div class="container" style="margin-bottom: 10px;">
+      <div class="">
+      {% for day in days %}
+        {% if days[day].day == "01" and days[day].month == month + 2%}
+        </div>
+        <div class="">
+          <h3>{{ monthNames[month+1] }}</h3>
+        </div>
+        <div class="">
+        {% endif %}
+        {% if days[day] is string() %}
+        <div class="card {% if days[day].isToday %} red{% endif %}">
+            <div class="card-header">
+          <form action="{{ linkchooseDish }}">
+            <h4 class="ui horizontal divider header{% if days[day].isToday %} red{% endif %}">{{weekdays[day]}}, {{day}}.</h4>
+          </div>
+          <div class="card-body">
+            <h2>Nichts zu essen.</h2>
+            <input type="hidden" name="choosen_date" value="{{days[day]}}">
+            <button type="submit" class="btn btn-primary btn-sm">Zuweisen</button>
+          </div>
+          </form>
+        </div>
+        <br />
+        {% else %}
+        {% for dish in days[day] %}
+        <div class="card {% if days[day].isToday %} red{% endif %}">
+          <form action="{{ url_for('removeDish') }}">
+            <div class="card-header">
+            <h4 class="ui horizontal divider header{% if days[day].isToday %} red{% endif %}">{{weekdays[day]}}, {{day}}.</h4>
+            </div>
+            <div class="card-body">
+            <h2 class="card-title"><a href="{{ url_for('showDish',dish_id=dish['dish_id']) }}">{{ dishes[dish['dish_id']] }}</a></h2>
+            <input type="hidden" name="choosen_date" value="{{dish.date_as_string}}">
+            <input type="hidden" name="dish_id" value="{{dish['dish_id']}}"> <br />
+            <button type="submit" class="btn btn-primary btn-sm">Löschen</button>
+          </div>
+          </form>
+        </div>
+        <br />
+        {% endfor %}{% endif %}
+        
+      {% endfor %}
+      </div> 
+<!-- Wunderlist Button-->
+<a class="btnwunderlist btn btn-primary " href="{{ url_for('addToWunderlist') }}?date={{ choosenDatum }}">
+    zu Wunderlist
+  </a>
+{% endblock %}

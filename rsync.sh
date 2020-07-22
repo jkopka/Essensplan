@@ -1,0 +1,1 @@
+rsync -a --exclude 'essensplan.db' ~/Documents/Programmieren/python/Essensplan/essensplan/ root@essensplan.local:/var/essensplan/essensplan/  --progress

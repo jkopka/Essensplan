@@ -1,2 +1,4 @@
-requests==2.22.0
-Flask==1.1.1
+flask
+flask_sqlalchemy
+flask_user
+flask_babel

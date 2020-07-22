@@ -1,0 +1,603 @@
+# Translations template for PROJECT.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-08-23 09:24+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: models.py:92
+msgid "Vorname"
+msgstr ""
+
+#: models.py:93
+msgid "Nachname"
+msgstr ""
+
+#: lib/python3.7/site-packages/flask_user/forms.py:41
+msgid "This Username is already in use. Please try another one."
+msgstr "Dieser Nutzername wird bereits verwendet. Wähle einen anderen."
+
+#: lib/python3.7/site-packages/flask_user/forms.py:48
+msgid "This Email is already in use. Please try another one."
+msgstr "Diese Email wird bereits verwendet. Wähle eine andere."
+
+#: lib/python3.7/site-packages/flask_user/forms.py:57
+#: lib/python3.7/site-packages/flask_user/forms.py:156
+#: lib/python3.7/site-packages/flask_user/forms.py:217
+#: lib/python3.7/site-packages/flask_user/forms.py:248
+#: lib/python3.7/site-packages/flask_user/forms.py:305
+#: lib/python3.7/site-packages/flask_user/forms.py:348
+msgid "Email"
+msgstr ""
+
+#: lib/python3.7/site-packages/flask_user/forms.py:58
+#: lib/python3.7/site-packages/flask_user/forms.py:157
+#: lib/python3.7/site-packages/flask_user/forms.py:249
+#: lib/python3.7/site-packages/flask_user/forms.py:349
+msgid "Email is required"
+msgstr "Email ist notwendig"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:59
+#: lib/python3.7/site-packages/flask_user/forms.py:158
+#: lib/python3.7/site-packages/flask_user/forms.py:250
+#: lib/python3.7/site-packages/flask_user/forms.py:350
+msgid "Invalid Email"
+msgstr "Ungültige Email"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:61
+msgid "Add Email"
+msgstr "Email hinzufügen"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:66
+#: lib/python3.7/site-packages/flask_user/forms.py:111
+msgid "Old Password"
+msgstr "Altes Passwort"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:67
+#: lib/python3.7/site-packages/flask_user/forms.py:112
+msgid "Old Password is required"
+msgstr "Altes Passwort wird benötigt"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:69
+#: lib/python3.7/site-packages/flask_user/forms.py:319
+msgid "New Password"
+msgstr "Neues Passwort"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:70
+#: lib/python3.7/site-packages/flask_user/forms.py:320
+msgid "New Password is required"
+msgstr "Neues Passwort wird benötigt"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:73
+#: lib/python3.7/site-packages/flask_user/forms.py:323
+msgid "Retype New Password"
+msgstr "Neues Passwort erneut eingeben"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:74
+#: lib/python3.7/site-packages/flask_user/forms.py:324
+msgid "New Password and Retype Password did not match"
+msgstr "Neues und erneuteingegebenes Passwort passen nicht zusammen"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:76
+#: lib/python3.7/site-packages/flask_user/forms.py:326
+#: lib/python3.7/site-packages/flask_user/templates/flask_user/change_password.html:5
+#: lib/python3.7/site-packages/flask_user/templates/flask_user/edit_user_profile.html:26
+#: templates/alt/flask_user/change_password.html:5
+#: templates/alt/flask_user/edit_user_profile.html:26
+#: templates/flask_user/change_password.html:5
+#: templates/flask_user/edit_user_profile.html:26
+msgid "Change password"
+msgstr "Passwort ändern"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:97
+#: lib/python3.7/site-packages/flask_user/forms.py:132
+msgid "Old Password is incorrect"
+msgstr "Das alte Passwort ist nicht korrekt"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:106
+msgid "New Username"
+msgstr "Neuer Benutzername"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:107
+#: lib/python3.7/site-packages/flask_user/forms.py:154
+#: lib/python3.7/site-packages/flask_user/forms.py:245
+msgid "Username is required"
+msgstr "Benutzername wird benötigt"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:114
+#: lib/python3.7/site-packages/flask_user/templates/flask_user/change_username.html:5
+#: lib/python3.7/site-packages/flask_user/templates/flask_user/edit_user_profile.html:23
+#: templates/alt/flask_user/change_username.html:5
+#: templates/alt/flask_user/edit_user_profile.html:23
+#: templates/flask_user/change_username.html:5
+#: templates/flask_user/edit_user_profile.html:23
+msgid "Change username"
+msgstr "Benutzernamen ändern"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:142
+msgid "First name"
+msgstr "Vorname"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:143
+msgid "Last name"
+msgstr "Nachname"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:145
+msgid "Update"
+msgstr ""
+
+#: lib/python3.7/site-packages/flask_user/forms.py:153
+#: lib/python3.7/site-packages/flask_user/forms.py:213
+#: lib/python3.7/site-packages/flask_user/forms.py:244
+msgid "Username"
+msgstr "Benutzername"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:160
+#: lib/python3.7/site-packages/flask_user/forms.py:252
+msgid "Password"
+msgstr "Passwort"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:161
+#: lib/python3.7/site-packages/flask_user/forms.py:253
+msgid "Password is required"
+msgstr "Password wird benötigt"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:163
+msgid "Remember me"
+msgstr "Zugriff merken"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:165
+#: lib/python3.7/site-packages/flask_user/forms.py:356
+#: lib/python3.7/site-packages/flask_user/templates/flask_user/login.html:5
+#: lib/python3.7/site-packages/flask_user/templates/flask_user/login_or_register.html:9
+#: lib/python3.7/site-packages/flask_user/templates/flask_user_layout.html:42
+#: templates/alt/flask_user/login.html:5
+#: templates/alt/flask_user/login_or_register.html:9
+#: templates/alt/flask_user_layout.html:42 templates/flask_user/login.html:5
+#: templates/flask_user/login_or_register.html:9
+#: templates/flask_user_layout.html:42
+msgid "Sign in"
+msgstr "Anmelden"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:172
+msgid "Username or Email"
+msgstr "Benutzer oder Email"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:209
+msgid "Username/Email"
+msgstr "Benutzer oder Email"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:223
+#: lib/python3.7/site-packages/flask_user/forms.py:305
+#, python-format
+msgid "%(username_or_email)s does not exist"
+msgstr "%(username_or_email)s existiert nicht"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:226
+msgid "Incorrect Password"
+msgstr "Falsches Passwort"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:230
+#, python-format
+msgid "Incorrect %(username_or_email)s and/or Password"
+msgstr "Falsche/r %(username_or_email)s und/oder Passwort"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:255
+msgid "Retype Password"
+msgstr "Passwort erneut eingeben"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:256
+msgid "Password and Retype Password did not match"
+msgstr "Die Passwörter stimmen nicht überein"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:257
+msgid "Token"
+msgstr ""
+
+#: lib/python3.7/site-packages/flask_user/forms.py:259
+#: lib/python3.7/site-packages/flask_user/templates/flask_user/login_or_register.html:41
+#: lib/python3.7/site-packages/flask_user/templates/flask_user/register.html:5
+#: templates/alt/flask_user/login_or_register.html:41
+#: templates/alt/flask_user/register.html:5
+#: templates/flask_user/login_or_register.html:41
+#: templates/flask_user/register.html:5
+msgid "Register"
+msgstr "Registrieren"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:294
+#: lib/python3.7/site-packages/flask_user/forms.py:310
+msgid "Your email address"
+msgstr "Deine Emailadresse"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:295
+#: lib/python3.7/site-packages/flask_user/forms.py:311
+msgid "Email address is required"
+msgstr "Eine Emailadresse wird benötigt"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:296
+#: lib/python3.7/site-packages/flask_user/forms.py:312
+msgid "Invalid Email address"
+msgstr "Ungültige Emailadresse"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:298
+msgid "Send reset password email"
+msgstr "Email zum Passwort-Zurücksetzen senden"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:314
+msgid "Resend email confirmation email"
+msgstr "Email zum Passwort-Zurücksetzen erneut senden"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:352
+msgid "Invite!"
+msgstr "Einladen"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:357
+#: lib/python3.7/site-packages/flask_user/templates/flask_user_layout.html:40
+#: templates/alt/flask_user_layout.html:40 templates/flask_user_layout.html:40
+msgid "Sign out"
+msgstr "Abmelden"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:358
+msgid "Home Page"
+msgstr "Homepage"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:359
+#: lib/python3.7/site-packages/flask_user/templates/flask_user/edit_user_profile.html:5
+#: templates/alt/flask_user/edit_user_profile.html:5
+#: templates/flask_user/edit_user_profile.html:5
+msgid "User profile"
+msgstr "Benutzerprofil"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:360
+msgid "Member Page"
+msgstr "Mitgliedsseite"
+
+#: lib/python3.7/site-packages/flask_user/forms.py:361
+msgid "Admin Page"
+msgstr "Adminseite"
+
+#: lib/python3.7/site-packages/flask_user/user_manager.py:250
+msgid ""
+"Password must have at least 6 characters with one lowercase letter, one "
+"uppercase letter and one number"
+msgstr "Das Passwort muss mindestens sechs Zeichen lang sein und mindestens einen Kleinbuchstaben, einen Großbuchstaben und eine Nummer enthalten"
+
+#: lib/python3.7/site-packages/flask_user/user_manager.py:266
+msgid "Username must be at least 3 characters long"
+msgstr "Der Benutzername muss mindestens drei Zeichen lang sein"
+
+#: lib/python3.7/site-packages/flask_user/user_manager.py:272
+msgid "Username may only contain letters, numbers, '-', '.' and '_'"
+msgstr "Der Benutzername darf nur Buchstaben, Nummern, '-', '.' und '_' enthalten"
+
+#: lib/python3.7/site-packages/flask_user/user_manager__views.py:113
+msgid "Your password has been changed successfully."
+msgstr "Dein Passwort wurde erfolgreich geändert."
+
+#: lib/python3.7/site-packages/flask_user/user_manager__views.py:147
+#, python-format
+msgid "Your username has been changed to '%(username)s'."
+msgstr "Dein Benutzername wurde in '%(username)s' geändert."
+
+#: lib/python3.7/site-packages/flask_user/user_manager__views.py:172
+msgid "Invalid confirmation token."
+msgstr "Ungültiger Bestätigungstoken."
+
+#: lib/python3.7/site-packages/flask_user/user_manager__views.py:184
+msgid "Your email has been confirmed."
+msgstr "Deine Email wurde bestätigt."
+
+#: lib/python3.7/site-packages/flask_user/user_manager__views.py:277
+#, python-format
+msgid ""
+"A reset password email has been sent to '%(email)s'. Open that email and "
+"follow the instructions to reset your password."
+msgstr "Eine Email wurde an '%(emails)' gesendet. Öffne die Email und folge den Instruktionen zum Zurücksetzen des Passwortes."
+
+#: lib/python3.7/site-packages/flask_user/user_manager__views.py:348
+msgid "Invitation has been sent."
+msgstr "Die Einladung wurde versendet."
+
+#: lib/python3.7/site-packages/flask_user/user_manager__views.py:417
+msgid "You have signed out successfully."
+msgstr "Du hast dich erfolgreich ausgeloggt."
+
+#: lib/python3.7/site-packages/flask_user/user_manager__views.py:570
+msgid "Your reset password token is invalid."
+msgstr "Dein Passwortzurücksetzungstoken ist ungültig."
+
+#: lib/python3.7/site-packages/flask_user/user_manager__views.py:593
+msgid "Your password has been reset successfully."
+msgstr "Dein Passwort wurde erfolgreich zurückgesetzt."
+
+#: lib/python3.7/site-packages/flask_user/user_manager__views.py:610
+#, python-format
+msgid "You must be signed in to access '%(url)s'."
+msgstr "Du musst eingeloggt sein, um auf '%(url)s' zugreifen zu können."
+
+#: lib/python3.7/site-packages/flask_user/user_manager__views.py:621
+#, python-format
+msgid "You do not have permission to access '%(url)s'."
+msgstr "Du hast keinen Zugriff auf '%(url)s'."
+
+#: lib/python3.7/site-packages/flask_user/user_manager__views.py:647
+#: lib/python3.7/site-packages/flask_user/user_manager__views.py:661
+#, python-format
+msgid ""
+"A confirmation email has been sent to %(email)s with instructions to "
+"complete your registration."
+msgstr "Eine Bestätigungsmail mit den Instruktionen zum Abschließen der Registrierung wurde an '%(email)s' gesendet."
+
+#: lib/python3.7/site-packages/flask_user/user_manager__views.py:649
+msgid "You have registered successfully."
+msgstr "Du hast dich erfolgreich registriert."
+
+#: lib/python3.7/site-packages/flask_user/user_manager__views.py:670
+msgid "Your account has not been enabled."
+msgstr "Dein Account wurde bisher nicht aktiviert."
+
+#: lib/python3.7/site-packages/flask_user/user_manager__views.py:679
+#, python-format
+msgid ""
+"Your email address has not yet been confirmed. Check your email Inbox and"
+" Spam folders for the confirmation email or <a href=\"%(url)s\">Re-send "
+"confirmation email</a>."
+msgstr "Dein Account wurde bisher nicht aktiviert. Schau in deinem Emailpostfach und Spamordner nach der Bestätigungsmail oder <a href=\"%(url)s\">sende die Bestätigungsmail erneut</a>."
+
+#: lib/python3.7/site-packages/flask_user/user_manager__views.py:690
+msgid "You have signed in successfully."
+msgstr "Du hast dich erfolgreich angemeldet."
+
+#: lib/python3.7/site-packages/flask_user/templates/flask_user_layout.html:48
+#: templates/alt/flask_user_layout.html:48 templates/flask_user_layout.html:48
+msgid "Home page"
+msgstr "Homepage"
+
+#: lib/python3.7/site-packages/flask_user/templates/flask_user/forgot_password.html:5
+#: templates/alt/flask_user/forgot_password.html:5
+#: templates/flask_user/forgot_password.html:5
+msgid "Forgot Password"
+msgstr "Passwort vergessen"
+
+#: lib/python3.7/site-packages/flask_user/templates/flask_user/invite_user.html:5
+#: templates/alt/flask_user/invite_user.html:5
+#: templates/flask_user/invite_user.html:5
+msgid "Invite User"
+msgstr "Benutzer einladen"
+
+#: lib/python3.7/site-packages/flask_user/templates/flask_user/login.html:21
+#: templates/alt/flask_user/login.html:21 templates/flask_user/login.html:24
+msgid "New here? Register."
+msgstr "Neu hier? Registriere dich!"
+
+#: lib/python3.7/site-packages/flask_user/templates/flask_user/login.html:44
+#: lib/python3.7/site-packages/flask_user/templates/flask_user/login_or_register.html:34
+#: templates/alt/flask_user/login.html:44
+#: templates/alt/flask_user/login_or_register.html:34
+#: templates/flask_user/login.html:47
+#: templates/flask_user/login_or_register.html:34
+msgid "Forgot your Password?"
+msgstr "Passwort vergessen?"
+
+#: lib/python3.7/site-packages/flask_user/templates/flask_user/manage_emails.html:5
+#: templates/alt/flask_user/manage_emails.html:5
+#: templates/flask_user/manage_emails.html:5
+msgid "Manage Emails"
+msgstr "Verwalte Emails"
+
+#: lib/python3.7/site-packages/flask_user/templates/flask_user/register.html:21
+#: templates/alt/flask_user/register.html:21
+#: templates/flask_user/register.html:21
+msgid "Already registered? Sign in."
+msgstr "Bereits registriert? Melde dich an."
+
+#: lib/python3.7/site-packages/flask_user/templates/flask_user/resend_confirm_email.html:5
+#: templates/alt/flask_user/resend_confirm_email.html:5
+#: templates/flask_user/resend_confirm_email.html:5
+msgid "Resend Confirmation Email"
+msgstr "Bestätigungsmail erneut verschicken"
+
+#: lib/python3.7/site-packages/flask_user/templates/flask_user/reset_password.html:5
+#: templates/alt/flask_user/reset_password.html:5
+#: templates/flask_user/reset_password.html:5
+msgid "Reset Password"
+msgstr "Passwort zurücksetzen"
+
+#: lib/python3.7/site-packages/flask_wtf/file.py:51
+#: lib/python3.7/site-packages/wtforms/validators.py:205
+#: lib/python3.7/site-packages/wtforms/validators.py:245
+msgid "This field is required."
+msgstr "Dieses Feld ist ein Pflichtfeld."
+
+#: lib/python3.7/site-packages/flask_wtf/file.py:85
+msgid "File does not have an approved extension: {extensions}"
+msgstr "Die Datei hat keine der erlaubten Endungen: {extensions}"
+
+#: lib/python3.7/site-packages/flask_wtf/file.py:90
+msgid "File does not have an approved extension."
+msgstr "Die Datei hat keine der erlaubten Endungen."
+
+#: lib/python3.7/site-packages/passlib/ext/django/utils.py:957
+msgid "algorithm"
+msgstr "Algorithmus"
+
+#: lib/python3.7/site-packages/wtforms/validators.py:58
+#, python-format
+msgid "Invalid field name '%s'."
+msgstr "Ungültiger Feldname '%s'."
+
+#: lib/python3.7/site-packages/wtforms/validators.py:66
+#, python-format
+msgid "Field must be equal to %(other_name)s."
+msgstr "Das Feld muss wie %(other_name)s sein."
+
+#: lib/python3.7/site-packages/wtforms/validators.py:99
+#, python-format
+msgid "Field must be at least %(min)d character long."
+msgid_plural "Field must be at least %(min)d characters long."
+msgstr[0] "Das Feld muss mindestens %(min)d Zeichen lang sein."
+msgstr[1] "Das Feld muss mindestens %(min)d Zeichen lang sein."
+
+#: lib/python3.7/site-packages/wtforms/validators.py:102
+#, python-format
+msgid "Field cannot be longer than %(max)d character."
+msgid_plural "Field cannot be longer than %(max)d characters."
+msgstr[0] "Das Feld darf nicht länger als %(max)d Zeichen lang sein."
+msgstr[1] "Das Feld darf nicht länger als %(max)d Zeichen lang sein."
+
+#: lib/python3.7/site-packages/wtforms/validators.py:105
+#, python-format
+msgid "Field must be between %(min)d and %(max)d characters long."
+msgstr "Das Feld muss zwischen %(min)d und %(max)d Zeichen lang sein."
+
+#: lib/python3.7/site-packages/wtforms/validators.py:141
+#, python-format
+msgid "Number must be at least %(min)s."
+msgstr "Die Nummer muss mindestens %(min)s groß sein."
+
+#: lib/python3.7/site-packages/wtforms/validators.py:143
+#, python-format
+msgid "Number must be at most %(max)s."
+msgstr "Die Nummer darf höchstens %(max)s groß sein."
+
+#: lib/python3.7/site-packages/wtforms/validators.py:145
+#, python-format
+msgid "Number must be between %(min)s and %(max)s."
+msgstr "Die Nummer muss mindestens %(min)s und höchstens %(max)s groß sein."
+
+#: lib/python3.7/site-packages/wtforms/validators.py:277
+msgid "Invalid input."
+msgstr "Ungültige Eingabe"
+
+#: lib/python3.7/site-packages/wtforms/validators.py:311
+msgid "Invalid email address."
+msgstr "Ungültige Emailadresse."
+
+#: lib/python3.7/site-packages/wtforms/validators.py:352
+msgid "Invalid IP address."
+msgstr "Ungültige IP-Adresse."
+
+#: lib/python3.7/site-packages/wtforms/validators.py:403
+msgid "Invalid Mac address."
+msgstr "Ungültige MAC-Adresse."
+
+#: lib/python3.7/site-packages/wtforms/validators.py:432
+msgid "Invalid URL."
+msgstr "Ungültige URL."
+
+#: lib/python3.7/site-packages/wtforms/validators.py:452
+msgid "Invalid UUID."
+msgstr "Ungültige UUID."
+
+#: lib/python3.7/site-packages/wtforms/validators.py:482
+#, python-format
+msgid "Invalid value, must be one of: %(values)s."
+msgstr "Ungültiger Wert. Er muss eine der folgenden sein: %(values)s."
+
+#: lib/python3.7/site-packages/wtforms/validators.py:514
+#, python-format
+msgid "Invalid value, can't be any of: %(values)s."
+msgstr "Ungültiger Wert. Er darf nicht eine der folgenden sein: %(values)s."
+
+#: lib/python3.7/site-packages/wtforms/csrf/core.py:98
+#: lib/python3.7/site-packages/wtforms/ext/csrf/form.py:47
+msgid "Invalid CSRF Token"
+msgstr "Ungültiger CSRF Token"
+
+#: lib/python3.7/site-packages/wtforms/csrf/session.py:61
+#: lib/python3.7/site-packages/wtforms/ext/csrf/session.py:58
+msgid "CSRF token missing"
+msgstr "CSRF Token fehlt"
+
+#: lib/python3.7/site-packages/wtforms/csrf/session.py:69
+#: lib/python3.7/site-packages/wtforms/ext/csrf/session.py:66
+msgid "CSRF failed"
+msgstr "CSRF ist fehlgeschlagen"
+
+#: lib/python3.7/site-packages/wtforms/csrf/session.py:74
+#: lib/python3.7/site-packages/wtforms/ext/csrf/session.py:71
+msgid "CSRF token expired"
+msgstr "CSRF Token ist abgelaufen"
+
+#: lib/python3.7/site-packages/wtforms/ext/appengine/fields.py:87
+#: lib/python3.7/site-packages/wtforms/ext/appengine/fields.py:164
+#: lib/python3.7/site-packages/wtforms/ext/appengine/fields.py:166
+#: lib/python3.7/site-packages/wtforms/ext/django/fields.py:95
+#: lib/python3.7/site-packages/wtforms/ext/sqlalchemy/fields.py:125
+#: lib/python3.7/site-packages/wtforms/ext/sqlalchemy/fields.py:127
+#: lib/python3.7/site-packages/wtforms/ext/sqlalchemy/fields.py:180
+#: lib/python3.7/site-packages/wtforms/ext/sqlalchemy/fields.py:185
+#: lib/python3.7/site-packages/wtforms/fields/core.py:475
+msgid "Not a valid choice"
+msgstr "Keine gültige Wahl"
+
+#: lib/python3.7/site-packages/wtforms/ext/appengine/fields.py:185
+msgid "Not a valid list"
+msgstr "Keine gültige Liste"
+
+#: lib/python3.7/site-packages/wtforms/ext/appengine/fields.py:204
+msgid "Not a valid integer list"
+msgstr "Keine gültigen Integer-Liste"
+
+#: lib/python3.7/site-packages/wtforms/ext/dateutil/fields.py:63
+msgid "Please input a date/time value"
+msgstr "Bitte gib ein Datum/Zeit-Wert ein"
+
+#: lib/python3.7/site-packages/wtforms/ext/dateutil/fields.py:75
+#: lib/python3.7/site-packages/wtforms/ext/dateutil/fields.py:83
+msgid "Invalid date/time input"
+msgstr "Ungültiger Datum/Zeit-Wert"
+
+#: lib/python3.7/site-packages/wtforms/fields/core.py:468
+msgid "Invalid Choice: could not coerce"
+msgstr "Ungültige Wahl: Kann es nicht erzwingen(?)"
+
+#: lib/python3.7/site-packages/wtforms/fields/core.py:501
+msgid "Invalid choice(s): one or more data inputs could not be coerced"
+msgstr "Ungültige Wahl: Eine oder mehrere Eingaben können nicht erzwungen(?) werden"
+
+#: lib/python3.7/site-packages/wtforms/fields/core.py:508
+#, python-format
+msgid "'%(value)s' is not a valid choice for this field"
+msgstr "'%(value)s' ist keine gültige Wahl für dieses Feld"
+
+#: lib/python3.7/site-packages/wtforms/fields/core.py:591
+msgid "Not a valid integer value"
+msgstr "Kein gültiger Integer-Wert"
+
+#: lib/python3.7/site-packages/wtforms/fields/core.py:657
+msgid "Not a valid decimal value"
+msgstr "Kein gültiger Dezimal-Wert"
+
+#: lib/python3.7/site-packages/wtforms/fields/core.py:684
+msgid "Not a valid float value"
+msgstr "Kein gültiger Float-Wert"
+
+#: lib/python3.7/site-packages/wtforms/fields/core.py:745
+msgid "Not a valid datetime value"
+msgstr "Kein gültiger datetime-Wert"
+
+#: lib/python3.7/site-packages/wtforms/fields/core.py:762
+msgid "Not a valid date value"
+msgstr "Kein gültiger date-Wert"
+
+#: lib/python3.7/site-packages/wtforms/fields/core.py:779
+msgid "Not a valid time value"
+msgstr "Kein gültiger time-Wert"
+
+#: templates/alt/base.html:52
+msgid "Login"
+msgstr "Anmelden"
+

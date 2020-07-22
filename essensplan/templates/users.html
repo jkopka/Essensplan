@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  {% for user in users %}
+    <ul id="user.username">
+      <li>Username: {{ user.username }}</li>
+      <li>Email: {{ user.email }}</li>
+      <li>Created: {{ user.created }}</li>
+      <li>Dishes: {% for dish in user.dishes %}
+                      {{ dish.name }}, 
+                  {% endfor %}
+      </li>
+      <li>Admin: {{ user.admin }}</li>
+    </ul>
+  {% endfor %}
+{% endblock %}

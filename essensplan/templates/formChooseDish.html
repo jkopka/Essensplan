@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container" style="margin-bottom: 10px;">
+        <h3>Gericht auswählen</h3>
+        <table id="dataTable" class="table table-striped">
+            <caption>Liste der Gerichte</caption>
+            <thead>
+                <tr>
+                <th>Gericht</th>
+                </tr>
+            </thead>
+            <tbody>
+            <!-- {% for dish in dishes %} -->
+            <tr>
+                <td><a href="{{ url_for("assignDish", dish_id=dish['dish_id'], choosen_date=date) }}" class="item-link external">{{dish['name']}}</a></td>
+            </tr>
+            <!-- {% endfor %} -->
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
