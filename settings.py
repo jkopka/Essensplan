@@ -36,13 +36,13 @@ USER_APP_NAME = 'Essensplan'
 USER_EMAIL_SENDER_NAME = 'Admin'
 USER_EMAIL_SENDER_EMAIL = 'admin@something.de'
 
-USER_ENABLE_EMAIL = True      # Disable email authentication
+USER_ENABLE_EMAIL = False      # Disable email authentication
 USER_ENABLE_USERNAME = True    # Enable username authentication
 USER_REQUIRE_RETYPE_PASSWORD = False    # Simplify register form
 
 USER_ENABLE_CHANGE_PASSWORD = True  # Allow users to change their password
 USER_ENABLE_CHANGE_USERNAME = False  # Allow users to change their username
-USER_ENABLE_CONFIRM_EMAIL = True  # Force users to confirm their email
+USER_ENABLE_CONFIRM_EMAIL = False  # Force users to confirm their email
 USER_ENABLE_FORGOT_PASSWORD = True  # Allow users to reset their passwords
 USER_ENABLE_REGISTRATION = True  # Allow new users to register
 USER_AFTER_LOGIN_ENDPOINT = 'displayWeek'
